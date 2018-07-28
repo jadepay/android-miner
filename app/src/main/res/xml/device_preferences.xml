@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="@string/pref_device_screen_key"
+	android:title="@string/pref_device_title" >
+
+		<CheckBoxPreference
+			android:key="@string/pref_battery_key"
+			android:title="@string/pref_battery"
+			android:defaultValue="true" />
+	<com.jadepay.cpuminer.SliderPreference
+		android:defaultValue="0.15"
+		android:key="@string/pref_battery_level_key"
+		android:title="@string/pref_battery_level" />
+
+    <EditTextPreference
+        android:editable="false"
+        android:key="@string/pref_cpu_key"
+        android:selectable="false"
+        android:summary="summary"
+        android:title="@string/pref_cpu" />
+</PreferenceScreen>

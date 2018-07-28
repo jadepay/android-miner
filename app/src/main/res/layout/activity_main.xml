@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/widget_margin"
+    android:paddingRight="@dimen/widget_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textlog"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_view"
+        android:layout_margin="5dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/liner_view"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/id_server_key"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:alpha="0.8"
+            android:background="@color/primary_text_material_dark"
+            android:hint="@string/pref_nserver"
+            android:inputType="textFilter"
+            android:text="@string/pref_server"
+            android:title="@string/pref_nserver" />
+
+        <EditText
+            android:id="@+id/id_port_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="@color/primary_text_material_dark"
+            android:hint="@string/pref_port"
+            android:inputType="number"
+            android:maxLength="5"
+            android:text="5555"
+            android:title="@string/pref_port" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/liner_view"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/id_username_key"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:alpha="0.8"
+            android:background="@color/primary_text_material_dark"
+            android:hint="@string/pref_username"
+            android:inputType="textFilter"
+            android:text="@string/pref_username"
+            android:title="@string/pref_username" />
+
+        <EditText
+            android:id="@+id/id_pass_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="@color/primary_text_material_dark"
+            android:hint="@string/pref_password"
+            android:inputType="textFilter"
+            android:text="@string/pref_password"
+            android:title="@string/pref_password" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/primary_text_material_dark"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/primary_text_material_dark"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/appwidget_dark_bg_clickable"
+            android:text="@string/button_save"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="5.0">
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/appwidget_dark_bg_clickable"
+            android:text="@string/button_start"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/appwidget_dark_bg_clickable"
+            android:text="@string/button_stop"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/appwidget_dark_bg_clickable"
+            android:text="@string/button_clear"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>
